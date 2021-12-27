@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block header%}
+<h1>メール受信回数の表示</h1>
+{% endblock %}
+{% block content %}
+<table border = '2'>
+    <th>ドメイン</th>
+    <th>受信回数</th>
+{% for i in value %}
+<tr>
+    <td>{{i.1}}</td>
+    <td>{{i.0}}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock content%}
