@@ -23,7 +23,7 @@ def login(request):
     pprint(c[1])
     gmail.select('theme')
     dt = datetime.datetime.today()
-    today = str(dt.year)+'-'+str(dt.month)+'-'+str(dt.day)
+    
     d = Mails.objects.all()
     d.delete()
     
